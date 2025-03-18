@@ -1,3 +1,4 @@
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -14,3 +15,14 @@ class RegisterSerializer(serializers.ModelSerializer):
             password=validated_data['password']
         )
         return user
+
+class UserAndTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+
+        # Agregar información del usuario en la respuesta JSON
+        data["username"] = self.user.username
+        data["email"] = self.user.email
+        data["id"] = self.user.id
+
+        return data

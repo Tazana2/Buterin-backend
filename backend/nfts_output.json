@@ -1,0 +1,83 @@
+[
+  {
+    "nftDetails": {
+      "name": "Homage 50",
+      "description": "Homage is a collection of 110 on-chain animations \ud83c\udf39 project by Rafa\u00ebl Rozendaal 2022 \ud83c\udf39 svg code by Reinier Feijen \ud83c\udf39 smart contract by Alberto Granzotto \ud83c\udf39 based on the work of Josef Albers \ud83c\udf39 License: CC BY-NC-ND 4.0",
+      "imageUrl": "https://api.rarible.org/content/embedded/b3fa66493beb7f380681fd224679e91aa6c2bde418b7cc5ee917c4c35a6684eb",
+      "raribleUrl": "https://rarible.com/token/0xd02f211bcb4747379e717def0504e01e067567c8:50",
+      "makePrice": "1.4"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "Mimic #5091",
+      "description": "Mimic Shhans is a 10K PFP NFT project based on the Ethereum blockchain. Mimic Shhans is a playful \u201cmimicking black cat\u201d in various costumes. Each Mimic Shhans has a distinct set of costumes, expressions, and accessories.Mimic Shhans is a public domain (CC0 license), which means that anybody can use it for personal or commercial purposes.",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/Qmeb29ryUSVY1CUv6ybrcbuJzJ7CwYffNhVf3FxkwhqQto/5091.png",
+      "raribleUrl": "https://rarible.com/token/0xf75fd01d2262b07d92dca7f19bd6a3457060d7db:5091",
+      "makePrice": "0.00229"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "Alyxandra_Common_1105",
+      "description": "Alyxandra's fierce independence, resourcefulness, mental acuity and raw talent make her both a natural leader and a lone wolf. She struggles against societal norms, relishes the freedoms of mercenary life, and fights for her family. She is ambitious beyond measure.",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/QmRHLUSdyNzLRJgoCPpFJcug87kXvLRt6qNikGdHFCQ5fU/Alyxandra_Common_1105.png",
+      "raribleUrl": "https://rarible.com/token/0xfc8a98c22a9e32948ab028414d67c62c49b16864:7105",
+      "makePrice": "0.011892"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "Bag #1066",
+      "description": "Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.",
+      "imageUrl": "https://api.rarible.org/content/embedded/2c31587fa1a36f612dd7f8ef1322901fc4028323712b54bd67c726427afce2f9",
+      "raribleUrl": "https://rarible.com/token/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7:1066",
+      "makePrice": "0.09165599"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "Loopify Drip",
+      "description": "Crew member of the Space Drip Mission, imagined and deployed by Loopify",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/QmP1hah24E186oakVtKsuc9Q49osYfjpdVAX1X9mvXCKRv/loopify.jpg",
+      "raribleUrl": "https://rarible.com/token/0xc541fc1aa62384ab7994268883f80ef92aac6399:256",
+      "makePrice": "0.0225"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "#1256",
+      "description": "welcome to swatches, an interactive art collection exploring color and motion. the collection introduces the evolution of digital collectibles where viewers can discover an infinite number of experiences with each piece. featuring hand-picked colors and fluid animations, each swatch is a dynamic canvas responding to every interaction.\n\n===== KEYBOARD CONTROLS =====\n\nMODE\n[ q ] - rounded\n[ w ] - square\n[ e ] - hypnotic\n\nSIZE\n[ a ] - tiny\n[ s ] - medium\n[ d ] - jumbo\n\nROTATE\n[ < ] - left\n[ > ] - right\n\nGLOBAL\n[ z ] toggle theme\n[ x ] toggle cursor",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/1256.png",
+      "raribleUrl": "https://rarible.com/token/0x13dc8261fce63499aa25deb512bb1827b411b83b:1256",
+      "makePrice": "0.0797"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "GEISAI 2022 Official #600",
+      "description": "These are NFTs created to commemorate GEISAI #21, an artist incubation event taking place on Sunday, August 21, 2022 at Tokyo Big Sight. The backgrounds come in 108 different colors, and for each color there are numbers #001-#108 and images assigned, resulting in 11,664 unique NFTs total.\nMurakami.Flowers NFTs (including any NFTs airdropped to Murakami.Flowers owners) are subject to the Collector Terms available here: https://murakamiflowers.kaikaikiki.com/collector.html. If you buy a Murakami.Flowers NFT, you do not receive commercial rights in the corresponding artwork.\u00a9Takashi Murakami/Kaikai Kiki Co., Ltd. All Rights Reserved.",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/bafkreihc3uywsrcvz7vgog2ifh6xlpndgshkfuxgsvncjl4s7vzvu2nk2e",
+      "raribleUrl": "https://rarible.com/token/0x015ac56d0cfb7adbac3ffbfabf67768f2f0996f3:600",
+      "makePrice": "0.0073"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "Intricada #21",
+      "description": "Intricada means \u2018interlaced\u2019 in Old Occitan, a Romance language\u00a0spoken in the south of France. This project explores the balance between emergence and control.\n\n**Emergence**\nIntricada is created with autonomous agents drawing very small dots and following simple rules, positioned according to geometrical patterns. I\u2019ve designed Intricada like a simulation, giving initial conditions and see what comes out of it. Each piece is the result of thousands of unpredictable consequences.\n\n**Variation**\nThis collection includes a very large number of possible variations. Some properties are specific to the agents and allow to define their rules, colors, number of children, angle\u2026 Many parameters influence the initial position and direction of the agents, palettes\u2026 Each combinaison creates a very unique output.\n\n**From far and near**\nFrom a distance, an Intricada piece may look like intersecting circles, geometric patterns, confetti, a perspective design... When you get closer, you can see that these shapes are composed of multitudes of agent trajectories. Finally, if we get even closer, we can see that these trajectories are composed of points (several hundreds of thousands per output).\n\n**Interaction**\nIn live mode:\n- Press [s] to save an image to disk\n- Press [n] to toggle noise\n- Add `&size=#` to the end of the live view URL to render a variation of your edition at another resolution",
+      "imageUrl": "https://media-proxy.artblocks.io/0x0a1bbd57033f57e7b6743621b79fcb9eb2ce3676/37000021.png",
+      "raribleUrl": "https://rarible.com/token/0x0a1bbd57033f57e7b6743621b79fcb9eb2ce3676:37000021",
+      "makePrice": "0.05"
+    }
+  },
+  {
+    "nftDetails": {
+      "name": "4046",
+      "description": "A Generative erc404 art collection at the forefront of digital innovation",
+      "imageUrl": "https://ipfs.raribleuserdata.com/ipfs/bafkreidta4kbdoxbz2f5q5in5qz6yqasmolidswu35co2gnhybvjozizlm",
+      "raribleUrl": "https://rarible.com/token/0x553afe6468949e0685959022217336717df5fbe8:57896044618658097711785492504343953926634992332820282019728792003956564824014",
+      "makePrice": "0.66"
+    }
+  }
+]

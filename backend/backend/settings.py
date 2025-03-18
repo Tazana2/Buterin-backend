@@ -55,11 +55,10 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30), # The access token lifetime is set to 30 minutes.
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60), # The access token lifetime is set to 30 minutes.
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7), # The refresh token lifetime is set to 7 days.
-    'ROTATE_REFRESH_TOKENS': True,
-    'BLACKLIST_AFTER_ROTATION': True,
     'AUTH_HEADER_TYPES': ('Bearer',), # The authorization header is set to Bearer.
+    "TOKEN_OBTAIN_SERIALIZER": "users_app.serializers.UserAndTokenObtainPairSerializer", # Return the tokens and the username
 }
 
 MIDDLEWARE = [
