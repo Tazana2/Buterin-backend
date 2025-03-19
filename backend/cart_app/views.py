@@ -13,29 +13,26 @@ class ShoppingCartViewSet(viewsets.ModelViewSet):
         return ShoppingCart.objects.filter(user=self.request.user)
     
     def list(self, request, *args, **kwargs):
-        """ En lugar de devolver una lista, devuelve solo el carrito del usuario autenticado. """
         cart, _ = ShoppingCart.objects.get_or_create(user=request.user)
         serializer = self.get_serializer(cart)
-        return Response(serializer.data)  # Devuelve solo el objeto sin lista []
+        return Response(serializer.data)
 
     def retrieve(self, request, *args, **kwargs):
-        """ Devuelve el carrito del usuario autenticado o lo crea si no existe. """
         cart, created = ShoppingCart.objects.get_or_create(user=request.user)
         serializer = self.get_serializer(cart)
         return Response(serializer.data)
 
     @action(detail=False, methods=["post"])
     def add_item(self, request):
-        """ Agrega un NFT al carrito sin borrar los anteriores. """
         nft_id = request.data.get("nft_id")
         
         if not nft_id:
-            return Response({"error": "Debe proporcionar un ID de NFT"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Must give a NFT id"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
             nft = Nft.objects.get(nft_id=nft_id)
         except Nft.DoesNotExist:
-            return Response({"error": "El NFT no existe"}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"error": "The NFT does not exists"}, status=status.HTTP_404_NOT_FOUND)
 
         cart, _ = ShoppingCart.objects.get_or_create(user=request.user)
         cart.items.add(nft)
@@ -45,16 +42,15 @@ class ShoppingCartViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=["post"])
     def remove_item(self, request):
-        """ Elimina un NFT del carrito. """
         nft_id = request.data.get("nft_id")
 
         if not nft_id:
-            return Response({"error": "Debe proporcionar un ID de NFT"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Must give a NFT id"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
             nft = Nft.objects.get(nft_id=nft_id)
         except Nft.DoesNotExist:
-            return Response({"error": "El NFT no existe"}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"error": "The NFT does not exists"}, status=status.HTTP_404_NOT_FOUND)
 
         cart, _ = ShoppingCart.objects.get_or_create(user=request.user)
         cart.items.remove(nft)

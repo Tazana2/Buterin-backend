@@ -1,7 +1,10 @@
 from rest_framework.routers import DefaultRouter
+from django.urls import include, path
 from .views import WishlistViewSet
 
 router = DefaultRouter()
-router.register("api/wishlist", WishlistViewSet)  # Endpoint: /api/wishlist/
+router.register("wishlist", WishlistViewSet, basename="wishlist")
 
-urlpatterns = router.urls
+urlpatterns = [
+    path("api/", include(router.urls)),
+]
