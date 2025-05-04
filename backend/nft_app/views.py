@@ -12,7 +12,6 @@ class NftViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     
 class NftWalletView(APIView):
-    # Puedes ajustar los permisos según lo que requieras
     permission_classes = [permissions.AllowAny]
 
     def get(self, request, format=None):
@@ -62,7 +61,7 @@ class NftWalletView(APIView):
             filtered_items.append({
                 "name": name,
                 "image": image_url,
-                # "url": additional_url  # Deja este campo comentado si por ahora no lo necesitas
+                # "url": additional_url
             })
 
         return Response(filtered_items, status=status.HTTP_200_OK)

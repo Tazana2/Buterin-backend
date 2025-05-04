@@ -7,5 +7,5 @@ router.register("api/nfts", NftViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("api/nfts2/", NftWalletView.as_view(), name="nfts2")
+    path("api/wallet/", NftWalletView.as_view(), name="wallet")
 ]
