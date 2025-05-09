@@ -9,4 +9,5 @@ urlpatterns = [
     path("", include("cart_app.urls")),  # Carrito de compras
     path("", include("wishlist_app.urls")),  # Lista de deseos
     path("", include("payment_app.urls")),  # Métodos de pago
+    path("", include('learnify_app.urls')), # Cursos externos
 ]

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "cart_app",
     "wishlist_app",
     "payment_app",
+    "learnify_app",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
