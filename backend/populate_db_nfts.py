@@ -22,7 +22,7 @@ with open(json_file_path, "r") as f:
 for nft in nfts_data:
     details = nft.get("nftDetails", {})
 
-    if not details or not details.get("imageUrl") or not details.get("makePrice"):
+    if not details or not details.get("imageUrl") or not details.get("makePrice") or not details.get("description") or not details.get("name"):
         print("⚠️  NFT sin detalles, se omite.")
         continue
 

@@ -11,7 +11,7 @@ class CourseProxyViewSet(viewsets.ViewSet):
     def list(self, request):
         try:
             resp = requests.get(
-                'http://127.0.0.1:8001/courses/',
+                'http://54.227.24.251:8000/courses/',
                 timeout=30
             )
             resp.raise_for_status()

@@ -106,13 +106,15 @@ def main():
     # Imprimir información requerida
     for index, nft in enumerate(nfts_data, 1):
         details = nft.get('nftDetails') or {}  # Asegurar que siempre sea un diccionario
-        collection_name = nft['collection']['name'] or 'Colección desconocida'
+        try:
+            collection_name = nft['collection']['name'] or 'Colección desconocida'
+        except KeyError:
+            collection_name = 'Colección desconocida'
         
         print(f"\n=== NFT {index} ({collection_name}) ===")
         
         if not nft.get('nftDetails'):
             print("⚠️  No se pudieron obtener detalles del NFT")
-            print(f"Enlace básico: {nft['collection'].get('bestPriceUrl', '')}")
             continue
             
         # Si llegamos aquí, hay detalles del NFT
@@ -131,11 +133,6 @@ def main():
             print(f"Enlace: {rarible_url}")
         else:
             print("Enlace: No disponible")
-            
-        # Precios de la colección
-        print("\nDatos de la colección:")
-        print(f"Floor Price (ETH): {nft['collection'].get('floorPriceNative', 'N/A')}")
-        print(f"Floor Price (USD): ${nft['collection'].get('floorPriceUSD', 'N/A')}")
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,10 @@ pip install -r requirements.txt
 
 cd backend/
 
+echo "Applying migrations..."
+python manage.py makemigrations
+python manage.py migrate
+
 # Ejecutar el script que trae los NFTs
 echo "Fetching NFTs..."
 python get_nfts.py
@@ -13,9 +17,6 @@ echo "Populating database..."
 python populate_db_nfts.py
 
 # Ejecutamos migraciones por si acaso
-echo "Applying migrations..."
-python manage.py makemigrations
-python manage.py migrate
 
 # Finalmente, arrancamos el servidor
 echo "Starting Django server..."
